@@ -3,10 +3,12 @@ import { Spotlight } from '../ui/Spotlight'
 import { TextGenerateEffect } from '../ui/TextGenerateEffect'
 import MagicButton from '../ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import { Meteors } from "../ui/Meteors";
 
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
+      <Meteors number={80} />
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"

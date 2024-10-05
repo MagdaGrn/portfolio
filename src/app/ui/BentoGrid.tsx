@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import  { GridGlobe }  from "./GridGlobe";
+import  { GlobeDemo }  from "./GridGlobe";
 import Lottie from "react-lottie";
 
 import animationData from "../data/confetti.json";
@@ -137,7 +137,8 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {id === 2 && <GlobeDemo />} 
+         
 
           {/* Tech stack list div */}
           {id === 3 && (
